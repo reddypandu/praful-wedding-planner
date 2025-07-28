@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year 2025 Offer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* styles.css */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: white;
+        background: black;
+        text-align: center;
+      }
+
+      .header {
+        background: url("fireworks-bg.jpg") no-repeat center;
+        background-size: cover;
+        /*padding: 40px 20px;*/
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        color: gold;
+      }
+
+      .header h1 span {
+        color: red;
+      }
+
+      .sub-header {
+        font-size: 1.5rem;
+        color: gold;
+        margin-top: 10px;
+      }
+
+      .vip-section,
+      .general-section {
+        margin: 40px 20px;
+      }
+
+      .vip-section h2,
+      .general-section h2 {
+        font-size: 2rem;
+        color: gold;
+        margin-bottom: 20px;
+      }
+
+      .vip-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .vip-card {
+        background: rgba(255, 215, 0, 0.2);
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .vip-card h3 {
+        color: gold;
+        font-size: 1.5rem;
+      }
+
+      .vip-card ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        margin-top: 15px;
+      }
+
+      .vip-card ul li {
+        margin: 10px 0;
+      }
+
+      .general-prices,
+      .general-details {
+        margin-top: 20px;
+      }
+
+      .general-prices div,
+      .general-details p {
+        background: rgba(255, 215, 0, 0.1);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+
+      .footer {
+        margin-top: 20px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>New Year <span>2025</span></h1>
+      <p class="sub-header">Early Bird Offer</p>
+      <p id="Countdown">
+
+      </p>
+    </header>
+
+    <section class="vip-section">
+      <h2>VIP Entry</h2>
+      <div class="vip-card-container">
+        <!-- Entry for 6 -->
+        <div class="vip-card">
+          <h3>₹27,999/-</h3>
+          <p>Entry for 6 Pax</p>
+          <ul>
+            <li>Teachers/100 Pipers/Ballantines/Jameson</li>
+            <li>6 Beers (Budweiser)</li>
+            <li>Secured Place with Bouncers</li>
+            <li>Photo Booth &amp; Skip-the-Queue</li>
+          </ul>
+        </div>
+        <!-- Entry for 4 -->
+        <div class="vip-card">
+          <h3>₹19,999/-</h3>
+          <p>Entry for 4 Pax</p>
+          <ul>
+            <li>Teachers/100 Pipers/Ballantines/Jameson</li>
+            <li>4 Beers &amp; Dedicated Seating</li>
+            <li>Secured Place with Bouncers</li>
+          </ul>
+        </div>
+        <!-- Lovely Couple -->
+        <div class="vip-card">
+          <h3>₹8,999/-</h3>
+          <p>Lovely Couple</p>
+          <ul>
+            <li>2 Beers/Breezers</li>
+            <li>Skip-the-Queue Entry</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="general-section">
+      <h2>General Entry</h2>
+      <div class="general-prices">
+        <div>
+          <p>Female: ₹1,699 (2 Beers/Breezer)</p>
+        </div>
+        <div>
+          <p>Male: ₹1,999 (2 Beers/Breezer)</p>
+        </div>
+        <div>
+          <p>Couple: ₹3,599 (4 Beers/Breezer)</p>
+        </div>
+      </div>
+      <div class="general-details">
+        <p>Regional Live Band</p>
+        <p>Dedicated Dance Floor</p>
+        <p>Electrifying DJ Night</p>
+        <p>NYE Countdown</p>
+        <p>Grand Special Entry</p>
+        <p>Photobooth</p>
+        <p>Separate Smoke Zone</p>
+        <p>Fireworks</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Venue: V-Convention, Hitech City</p>
+      <p>Date: Dec 31, 8 PM onwards</p>
+    </footer>
+    <script>
+      // script.js
+      const eventDate = new Date("2025-01-01T00:00:00").getTime();
+      const countdownElement = document.getElementById("Countdown");
+      countdownElement.style.color = "gold";
+      countdownElement.style.marginTop = "20px";
+      //document.body.appendChild(countdownElement);
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = eventDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML = `Countdown: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (timeLeft < 0) {
+          countdownElement.innerHTML = "The event has started!";
+        }
+      }
+
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
