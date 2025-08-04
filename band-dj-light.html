@@ -208,46 +208,73 @@ We bring you a complete Band DJ Light event experience, featuring dynamic lighti
           </div>
         </div>
       </section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="images/praful-wedding-planner/praful (12).jpeg"
-              alt=""
-              class="hover-effect"
-            />
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/Dandiya Night1.1_img.jpg"
-              alt=""
-              class="hover-effect"
-            />
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/Dandiya Night2.1_img.jpg"
-              alt=""
-              class="hover-effect"
-            />
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/Dandiya Night3.1_img.jpg"
-              alt=""
-              class="hover-effect"
-            />
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/Dandiya Night4_img.jpg"
-              alt=""
-              class="hover-effect"
-            />
-          </div>
-        </div>
+     <div class="container pb-3">
+  <div class="gallery-container">
+    
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/praful-wedding-planner/praful (12).jpeg" alt=""  />
       </div>
+    </div>
 
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/Dandiya Night1.1_img.jpg" alt=""  />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/Dandiya Night2.1_img.jpg" alt=""  />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/Dandiya Night3.1_img.jpg" alt=""  />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/Dandiya Night4_img.jpg" alt=""  />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.gallery-container {
+  column-count: 2; /* Number of columns */
+  column-gap: 12px; /* Space between columns */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid {
+  break-inside: avoid;
+  margin-bottom: 12px;
+   overflow: hidden;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.img-holder:hover img {
+  transform: scale(1.05);
+  
+}
+
+
+</style>
      
 
       <!-- end page-title -->

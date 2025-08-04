@@ -210,25 +210,70 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/safa/2.png" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/safa/3.png" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/safa/4.png" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/safa/5.png" alt="" class="hover-effect" />
-          </div>
-        </div>
+     <div class="container">
+  <div class="gallery-container">
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/safa/2.png" alt=""  />
       </div>
+    </div>
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/safa/3.png" alt=""  />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/safa/4.png" alt=""  />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="img-holder">
+        <img src="images/safa/5.png" alt=""  />
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
     
+<style>
+.gallery-container {
+  column-count: 2; /* Number of columns */
+  column-gap: 12px; /* Space between columns */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
 
+.grid {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.img-holder:hover img {
+  transform: scale(1.05);
+  
+}
+
+
+
+</style>
       <!-- end page-title -->
 
       <!-- wpo-site-footer start -->
