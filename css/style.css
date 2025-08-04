@@ -650,7 +650,7 @@ a.ui-button:active,
 .theme-btn-s3,
 .theme-btn-s4 {
   background: #c49540;
-  color: #000;
+  color: #fff;
   display: inline-block;
   font-weight: 500;
   padding: 15px 45px;
@@ -4950,7 +4950,7 @@ wpo-hero-slider-s3
   .wpo-hero-slider-s3 .slide-inner .slide-content h2,
   .wpo-hero-slider-s4 .slide-inner .slide-content h2 {
     font-size: 40px;
-    line-height: 64px;
+    line-height: 30px;
   }
 }
 
