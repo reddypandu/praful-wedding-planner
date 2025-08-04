@@ -207,29 +207,44 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/praful-wedding-planner/praful (10).jpeg" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/praful-wedding-planner/praful (17).jpeg" alt="" class="hover-effect" />
-          </div>
-       
-          <div class="col-md-6">
-            <img src="images/ghodi-baggi/1.png" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/ghodi-baggi/3.png" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/ghodi-baggi/5.png" alt="" class="hover-effect" />
-          </div>
-          <div class="col-md-6">
-            <img src="images/ghodi-baggi/4.png" alt="" class="hover-effect" />
-          </div>
-        </div>
-      </div>
+    <div class="container pb-3">
+  <div class="row">
+    <div class="gallery-container">
+      <div class="grid"><div class="img-holder"><img src="images/praful-wedding-planner/praful (10).jpeg" alt=""  /></div></div>
+      <div class="grid"><div class="img-holder"><img src="images/praful-wedding-planner/praful (17).jpeg" alt=""  /></div></div>
+      <div class="grid"><div class="img-holder"><img src="images/ghodi-baggi/1.png" alt=""  /></div></div>
+      <div class="grid"><div class="img-holder"><img src="images/ghodi-baggi/3.png" alt=""  /></div></div>
+      <div class="grid"><div class="img-holder"><img src="images/ghodi-baggi/5.png" alt=""  /></div></div>
+      <div class="grid"><div class="img-holder"><img src="images/ghodi-baggi/4.png" alt=""  /></div></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.gallery-container {
+  column-count: 2; /* Number of columns */
+  column-gap: 12px; /* Space between columns */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid {
+  break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+.img-holder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+
+
+</style>
 
 
 
