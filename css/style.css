@@ -415,6 +415,7 @@ img {
   transition: all 0.2s;
 }
 
+
 @media (max-width: 991px) {
   .back-to-top {
     width: 35px;
@@ -8043,7 +8044,7 @@ wpo-hero-slider-s4
 .wpo-contact-section-s5 .wpo-contact-section-wrapper {
   position: relative;
   margin: 0 auto;
-  background: #d2ada2;
+  background: #c49540;
   z-index: 1;
 }
 
@@ -25291,9 +25292,25 @@ wpo-hero-slider-s4
 
 .whatsapp {
   position: fixed;
-  bottom: 3%;
-  left: 3%;
+  bottom: 11%;
+  right:15px;
   z-index: 1000;
+}
+.call-btn {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border: 2px solid #c49540;
+  border-radius: 45px;
+  text-align: center;
+
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 20%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .Btn {
   display: flex;
