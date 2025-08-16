@@ -112,27 +112,21 @@ Version:        1.0.0
   src: url("../fonts/monallesiascript.woff2") format("woff2"), url("../fonts/monallesiascript.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'monallesia';
-  src: url("../fonts/monallesiascript.woff2") format("woff2"), url("../fonts/monallesiascript.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 } */
+
 @font-face {
   font-family: "Queensides";
   src: url("../fonts/queensides-font/Queensides-3z7Ey.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: "Bright Sunshine Demo";
   src: url("../fonts/bright-sunshine-font/BrightSunshineDemo-7BvgD.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /* 1.1	Theme Reset Style */
 html {
@@ -172,7 +166,7 @@ h4,
 h5,
 h6 {
   color: #323232;
-  font-family: "Bright Sunshine Demo";
+  font-family: "Queensides";
   font-weight: 400;
 }
 h2 {
@@ -6462,21 +6456,27 @@ wpo-hero-slider-s4
 }
 
 .wpo-site-footer .link-widget ul li a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 42px;
-  background: #fff;
-  color: #939580;
-  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #ffffff, #f4f4f4);
+  color: #c49540;
+  font-size: 16px;
   border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .wpo-site-footer .link-widget ul li a:hover {
-  background: #c49540;
-  color: #000;
+  background: linear-gradient(135deg, #c49540, #a3782f);
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
 
 .wpo-site-footer .link-widget ul li + li {
   margin-left: 15px;
