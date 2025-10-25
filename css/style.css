@@ -3795,15 +3795,9 @@ a.ui-button:active,
 
 .wpo-header-style-3 .navigation,
 .wpo-header-style-4 .navigation {
-  background: transparent;
+  background: black;
 }
 
-.wpo-header-style-3 .navigation.sticky-on,
-.wpo-header-style-4 .navigation.sticky-on {
-  background: #000;
-  -webkit-box-shadow: 0 -5px 15px #086ad84a;
-  box-shadow: 0 -5px 15px #086ad84a;
-}
 
 .wpo-header-style-3 #navbar > ul > li > a,
 .wpo-header-style-4 #navbar > ul > li > a {
